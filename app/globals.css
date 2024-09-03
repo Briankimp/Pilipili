@@ -1,33 +1,33 @@
+/* Apply Tailwind's base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Set the background color for light mode */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background-color: #fff6e4;
+  color: #000; /* Added default text color */
 }
 
+/* Apply different styles for dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    background-color: #333; /* Adjusted for dark mode */
+    color: #fff; /* Adjusted text color for dark mode */
   }
 }
 
+/* Apply global styles to the body */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Nunito', sans-serif; /* Ensure Nunito is applied */
+  margin: 0;
+  padding: 0;
+  color: inherit; /* Ensure text color from root is applied */
 }
 
+/* Custom utility class */
 @layer utilities {
   .text-balance {
-    text-wrap: balance;
+    text-wrap: balance; /* This is not a standard CSS property */
   }
 }
