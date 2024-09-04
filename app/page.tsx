@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
 import Link from "next/link";
+import Ingredients from "./Ingredients/page";
 
 const Home = () => {
   return (
@@ -31,8 +32,12 @@ const Home = () => {
           <button className="text-black-100 bg-btn-orange p-3 rounded-full m-3">
             Shop in Uganda
           </button>
-        </Link>
-      </div>
+              </Link>
+        </div>
+        <div className="h-100vh bg-black-100 w-full text-green-100">
+              Ingrediends
+              <Ingredients/>
+        </div>
     </main>
   );
 };

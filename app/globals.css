@@ -1,33 +1,23 @@
-/* Apply Tailwind's base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Set the background color for light mode */
 :root {
   background-color: #fff6e4;
-  /* color: #000; Added default text color */
 }
 
-/* Apply different styles for dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    background-color: #fff6e4; /* Adjusted for dark mode */
-    color: #fff; /* Adjusted text color for dark mode */
+    background-color: #fff6e4;
   }
 }
 
-/* Apply global styles to the body */
 body {
-  font-family: 'Nunito', sans-serif; /* Ensure Nunito is applied */
-  margin: 0;
-  padding: 0;
-  /* color: inherit; Ensure text color from root is applied */
+  color: #fff6e4;
 }
 
-/* Custom utility class */
 @layer utilities {
   .text-balance {
-    text-wrap: balance; /* This is not a standard CSS property */
+    text-wrap: balance;
   }
 }
