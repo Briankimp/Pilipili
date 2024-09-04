@@ -6,13 +6,13 @@
 /* Set the background color for light mode */
 :root {
   background-color: #fff6e4;
-  color: #000; /* Added default text color */
+  /* color: #000; Added default text color */
 }
 
 /* Apply different styles for dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    background-color: #333; /* Adjusted for dark mode */
+    background-color: #fff6e4; /* Adjusted for dark mode */
     color: #fff; /* Adjusted text color for dark mode */
   }
 }
@@ -22,7 +22,7 @@ body {
   font-family: 'Nunito', sans-serif; /* Ensure Nunito is applied */
   margin: 0;
   padding: 0;
-  color: inherit; /* Ensure text color from root is applied */
+  /* color: inherit; Ensure text color from root is applied */
 }
 
 /* Custom utility class */
