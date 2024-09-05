@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import { Menu,X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navlinks = [
   {
@@ -45,9 +45,9 @@ const Mobilenav: React.FC = () => {
             {isOpen ? <X size={34} /> : <Menu size={34} />}
           </button>
           <div
-            className={`fixed top-0 right-0 w-full h-full bg-white-100 items-center transition-transform transform ${
+            className={`fixed top-0 right-0 w-full h-full items-center transition-transform transform ${
               isOpen ? "translate-x-0" : "translate-x-full"
-            } items-center gap-6 p-4 z-40`}
+            } items-center gap-6 p-4 z-100`}
           >
             <div className="flex gap-5 p-5 flex-col items-center h-full text-4xl ">
               {...Navlinks.map((Navlink, index) => (
