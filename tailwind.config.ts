@@ -17,6 +17,7 @@ const config: Config = {
         },
         white: {
           100: "#fff6e4",
+          200:"#ffffff",
         },
         btn: {
           red: "#d93430",
