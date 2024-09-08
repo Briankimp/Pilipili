@@ -1,22 +1,5 @@
-// import { CardSpotlight } from '@/components/ui/card-spotlight'
-// import React from 'react'
-
-// // const = [
-// //     {
-
-// //     }
-// // ],
-// const Shop = () => {
-//   return (
-//     <div>
-//       <CardSpotlight children={undefined}/>
-//     </div>
-//   )
-// }
-
-// export default Shop
-// "use client"
 import { CardSpotlight } from "@/components/ui/card-spotlight";
+// import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 export function CardSpotlightDemo() {
   return (
