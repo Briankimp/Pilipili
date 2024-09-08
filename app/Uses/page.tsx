@@ -1,7 +1,7 @@
-import React from 'react'
-import Carousel from '../Components/Carousel'
-import Link from 'next/link';
-import Button from '../Components/Button';
+import React from "react";
+import Carousel from "../../components/Carousel";
+import Link from "next/link";
+import Button from "../../components/Button";
 
 const Uses = () => {
   return (
@@ -10,13 +10,13 @@ const Uses = () => {
       <div>
         <Carousel />
       </div>
-      <div>
+      <div className=" w-full flex justify-items-center  ">
         <Link href="/">
-          <Button variant="Primary" >Show Us Your Recipe</Button>
+          <Button variant="Primary">Show Us Your Recipe</Button>
         </Link>
       </div>
     </div>
   );
-}
+};
 
-export default Uses
+export default Uses;

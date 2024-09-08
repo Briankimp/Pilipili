@@ -1,15 +1,17 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
+import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Ingredients from "./Ingredients/page";
 import Uses from "./Uses/page";
-import Button from "./Components/Button";
+import Button from "../components/Button";
+// import Shop from "./Shop/page";
+import { CardSpotlightDemo } from "./Shop/page";
 
 const Home = () => {
   return (
     <main className="">
       <div className="sticky top-0  ">
-      {/* <div> */}
+        {/* <div> */}
         <Navbar />
       </div>
       <div className="text-green-100 w-100%   h-calc[100vh-48px] items-center p-6  ">
@@ -28,7 +30,7 @@ const Home = () => {
       <div>
         <Link href="/">
           <Button variant="Primary"> Shop in Kenya</Button>
-          </Link>
+        </Link>
         <Link href="/">
           <Button variant="Primary">Shop in Rwanda</Button>
         </Link>
@@ -40,6 +42,9 @@ const Home = () => {
       {/* Uses/Ingredients */}
       <div className=" h-screen style={{ backgroundImage: url('https://pin.it/22z3y5OoS')}}">
         <Uses />
+      </div>
+      <div>
+        <CardSpotlightDemo />
       </div>
     </main>
   );
