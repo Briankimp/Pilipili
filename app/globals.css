@@ -22,7 +22,7 @@ body {
   }
 }
 
-.button-hover-effect {
+/* .button-hover-effect {
   transition: transform 0.3s ease, background-color 0.3s ease;
   display: flex;
   align-items: center;
@@ -32,11 +32,11 @@ body {
   transform: rotate(10deg);
 }
 .button-hover-effect::after {
-  content: "Shop Now";
+  content: "";
   display: block;
   opacity: 0;
   transition: opacity 0.3s ease-in;
 }
 .button-hover-effect:hover::after {
   opacity: 1;
-}
+} */
