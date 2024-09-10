@@ -59,7 +59,10 @@ const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
       <div className=" h-screen style={{ backgroundImage: url('https://pin.it/22z3y5OoS')}}">
         <Uses />
       </div>
-      <div>
+      <div
+        className="h-screen bg-cover bg-center"
+        style={{ backgroundImage: `url('/uses/pizza.jpg')` }}
+      >
         <Shop />
       </div>
       {/* </div> */}
