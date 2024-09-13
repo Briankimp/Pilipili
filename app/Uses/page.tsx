@@ -6,13 +6,13 @@ import Button from "../../components/Button";
 const Uses = () => {
   return (
     <div className="text-black-100">
-      <h1>Flavours that Bring you together</h1>
+      <h1 className="text-black-100 text-center font-bold  text-2x md:text-4xl ">Flavours that Bring you together</h1>
       <div>
         <Carousel />
       </div>
       <div className=" w-full flex justify-items-center  ">
         <Link href="/">
-          <Button variant="Primary">Show Us Your Recipe</Button>
+          <Button variant="Primary" className=" itemc-center" >Show Us Your Recipe</Button>
         </Link>
       </div>
     </div>
