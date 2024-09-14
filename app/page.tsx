@@ -10,8 +10,8 @@ import { CardSpotlightDemo } from "./Shop/page";
 const Home = () => {
   return (
     <main className="">
-      <div className="sticky top-0  ">
-        {/* <div> */}
+      <div className="sticky top-0">
+        {/*  */}
         <Navbar />
       </div>
       <div className="text-green-100 w-100%   h-calc[100vh-48px] items-center p-6  ">
