@@ -15,6 +15,7 @@
     "@mui/material": "^6.1.0",
     "@react-three/fiber": "^8.17.7",
     "@types/three": "^0.168.0",
+    "antd": "^5.20.6",
     "clsx": "^2.1.1",
     "framer-motion": "^11.5.4",
     "lucide-react": "^0.438.0",

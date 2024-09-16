@@ -233,16 +233,16 @@ const Contact = () => {
         </h1>
         <div className=" flex-col md:grid md:grid-cols-2">
           <div className="text-black-100 pt-8">
-            <div className="flex px-5 justify-center items-center h-screen bg-white-100">
+            <div className="flex px-5 justify-center items-center h-screen shadow-sm bg-white-100">
               <div className=" ">
-                <h1 className="font-semibold  ">Follow us on :</h1>
+                <h1 className="font-semibold text-xl">Follow us on :</h1>
                 <ul className="flex flex-row ">
-                  <li className="">
+                  <li className="  ">
                     {Socials.map((Social, index) => (
                       <Link
                         key={index}
                         href={Social.path}
-                        className="py-5 text-green-100 hover:text-black-100 "
+                        className="py-5 text-green-100 hover:text-black-100"
                       >
                         <h1 className="flex text-xl py-2 ">
                           <span className="">{Social.icon}</span>
