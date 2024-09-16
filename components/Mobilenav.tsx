@@ -30,10 +30,12 @@ const Mobilenav: React.FC = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="md:hidden block text-text-black font-semibold p-3 shadow-md">
+
+    <div className="md:hidden  text-text-black font-semibold p-2 mt-1 shadow-md bg-white-200 rounded-full mx-2">
+
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-5xl font-bold text-black-100">22</h1>
+          <h1 className="text-5xl font-bold px-2 text-black-100">22</h1>
         </div>
         <div>
            <Button

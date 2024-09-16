@@ -1,24 +1,42 @@
+"use client";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Ingredients from "./Ingredients/page";
 import Uses from "./Uses/page";
 import Button from "../components/Button";
-// import Shop from "./Shop/page";
-import { CardSpotlightDemo } from "./Shop/page";
+import { useState } from "react";
+import Shop from "./Shop/page";
+import { ShoppingCart } from "lucide-react";
 
-const Home = () => {
+interface HoverButtonProps {
+  initialText: string;
+  hoverText: string;
+}
+
+const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
+  const [text, setText] = useState(initialText);
+  const [hovered, setHovered] = useState(false);
   return (
-    <main className="">
+
+    <main className="md:px-16">
       <div className="sticky top-0">
-        {/*  */}
+        {/* <div> */}
         <Navbar />
       </div>
-      <div className="text-green-100 w-100%   h-calc[100vh-48px] items-center p-6  ">
-        <h1 className=" text-8xl font-semibold  ">
+      {/* <div className="flex-grow "> */}
+      <div className="text-green-100 w-full flex flex-col  gap-7 h-screen p-6"
+        // style={{
+        //   backgroundImage: "url('/uses/Chilli.jpeg')",
+        //   backgroundSize: "100% 100%", // Adjust the width and height as needed
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        // }}
+      > 
+        <h1 className=" text-6xl md:text-8xl font-semibold  ">
           <span>22</span> Chilli Flakes
         </h1>
-        <h1 className="text-2xl">Spice Life Naturally</h1>
+        <h1 className="text-2xl  italic font-light">Spice Life Naturally </h1>
         <h2 className="text-xl">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nisi
           ullam <br />
@@ -26,26 +44,53 @@ const Home = () => {
           <br />
           impedit expedita quis illum dolorum ipsa perferendis nostrum natus.
         </h2>
+        <div className=" flex w-full  ">
+          <Link href="/">
+            <Button variant="Primary" className=" items-center flex">
+              {/* This will display only one text at a time based on hover state */}
+              <span>Shop in Kenya</span>
+            </Button>
+          </Link>
+          <Link href="/">
+            <Button variant="Primary" className=" items-center flex">
+              {/* This will display only one text at a time based on hover state */}
+              <span>Shop in Rwanda</span>
+            </Button>
+          </Link>
+        </div>
       </div>
-      <div>
-        <Link href="/">
-          <Button variant="Primary"> Shop in Kenya</Button>
-        </Link>
-        <Link href="/">
-          <Button variant="Primary">Shop in Rwanda</Button>
-        </Link>
-      </div>
-      <div className="h-100vh bg-black-100 w-full h-screen text-green-100">
+      <div
+        className="h-screen w-full text-green-100"
+        // style={{
+        //   backgroundImage: "url('/uses/PlayfulCook.jpeg')",
+        //   backgroundSize: "100% 100%", // Adjust the width and height as needed
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        //   opacity: 0.6,
+        // }}
+      >
         {/* //Ingredients */}
         <Ingredients />
       </div>
-      {/* Uses/Ingredients */}
-      <div className=" h-screen style={{ backgroundImage: url('https://pin.it/22z3y5OoS')}}">
+
+      <div
+        className=" h-screen"
+        // style={{
+        //   backgroundImage: "url('/uses/Another.jpeg')",
+        //   backgroundSize: "100% 100%", // Adjust the width and height as needed 
+
+        //  }}
+      >
         <Uses />
       </div>
-      <div>
-        <CardSpotlightDemo />
+      <div
+        className="h-screen bg-cover bg-center"
+        // style={{ backgroundImage: "url('/uses/PlayfulCook.jpeg')" }}
+      >
+        <Shop />
       </div>
+      <div></div>
+      {/* </div> */}
     </main>
   );
 };
