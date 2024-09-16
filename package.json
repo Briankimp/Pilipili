@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@material-ui/core": "^4.12.4",
+    "@mui/material": "^6.1.0",
     "@react-three/fiber": "^8.17.7",
     "@types/three": "^0.168.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.5.4",
     "lucide-react": "^0.438.0",
+    "mini-css-extract-plugin": "^2.9.1",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18",

@@ -9,6 +9,7 @@ import { useState } from "react";
 import Shop from "./Shop/page";
 import { ShoppingCart } from "lucide-react";
 import Sustainability from "./sustainability/page";
+import Contact from "./contact/page";
 interface HoverButtonProps {
   initialText: string;
   hoverText: string;
@@ -18,7 +19,8 @@ const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
   const [text, setText] = useState(initialText);
   const [hovered, setHovered] = useState(false);
   return (
-    <main className="md:px-16">
+    // <main className="md:px-16">
+    <main className="">
       <div className="sticky top-0">
         {/* <div> */}
         <Navbar />
@@ -89,7 +91,9 @@ const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
       >
         <Shop />
       </div>
-      <div>{/* <Sustainability/> */}</div>
+      <div className="px-4 ">
+        <Contact/>
+      </div>
       {/* </div> */}
     </main>
   );
