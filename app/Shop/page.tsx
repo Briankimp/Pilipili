@@ -4,6 +4,7 @@ import { details } from "framer-motion/client";
 import Button from "@/components/Button";
 import Link from "next/link";
 import path from "path";
+import Sustainabilty from "../sustainability/page";
 const Pricing = [
   {
     Contry: "Kenya",
@@ -58,7 +59,9 @@ const Shop = () => {
   return (
     <div className="text-black-100 w-full  ">
       <div>
-        <h1 className="text-4xl font-semibold text-center py-3  ">Get Your Spice Fix</h1>
+        <h1 className="text-4xl font-semibold text-center py-3  ">
+          Get Your Spice Fix
+        </h1>
       </div>
       <div className=" grid grid-cols-2 px-4 gap-2 w-full justify-center items-center ">
         {Pricing.map((Pricing, index) => (
@@ -84,6 +87,9 @@ const Shop = () => {
             </Link>
           </div>
         ))}
+      </div>
+      <div className=" w-full bg-white-200">
+        <Sustainabilty />
       </div>
     </div>
   );

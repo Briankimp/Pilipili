@@ -2,13 +2,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
-import Ingredients from "./Ingredients/page";
+import Ingredients from "./ingredients/page";
 import Uses from "./Uses/page";
 import Button from "../components/Button";
 import { useState } from "react";
 import Shop from "./Shop/page";
 import { ShoppingCart } from "lucide-react";
-
+import Sustainability from "./sustainability/page";
 interface HoverButtonProps {
   initialText: string;
   hoverText: string;
@@ -18,21 +18,21 @@ const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
   const [text, setText] = useState(initialText);
   const [hovered, setHovered] = useState(false);
   return (
-
     <main className="md:px-16">
       <div className="sticky top-0">
         {/* <div> */}
         <Navbar />
       </div>
       {/* <div className="flex-grow "> */}
-      <div className="text-green-100 w-full flex flex-col  gap-7 h-screen p-6"
+      <div
+        className="text-green-100 w-full flex flex-col  gap-7 h-screen p-6"
         // style={{
         //   backgroundImage: "url('/uses/Chilli.jpeg')",
         //   backgroundSize: "100% 100%", // Adjust the width and height as needed
         //   backgroundPosition: "center",
         //   backgroundRepeat: "no-repeat",
         // }}
-      > 
+      >
         <h1 className=" text-6xl md:text-8xl font-semibold  ">
           <span>22</span> Chilli Flakes
         </h1>
@@ -77,19 +77,19 @@ const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
         className=" h-screen"
         // style={{
         //   backgroundImage: "url('/uses/Another.jpeg')",
-        //   backgroundSize: "100% 100%", // Adjust the width and height as needed 
+        //   backgroundSize: "100% 100%", // Adjust the width and height as needed
 
         //  }}
       >
         <Uses />
       </div>
       <div
-        className="h-screen bg-cover bg-center"
+        className="h-screen bg-cover bg-center bg-white-200"
         // style={{ backgroundImage: "url('/uses/PlayfulCook.jpeg')" }}
       >
         <Shop />
       </div>
-      <div></div>
+      <div>{/* <Sustainability/> */}</div>
       {/* </div> */}
     </main>
   );
