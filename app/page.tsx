@@ -2,13 +2,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
-import Ingredients from "./Ingredients/page";
+import Ingredients from "./ingredients/page";
 import Uses from "./Uses/page";
 import Button from "../components/Button";
 import { useState } from "react";
 import Shop from "./Shop/page";
 import { ShoppingCart } from "lucide-react";
-
+import Sustainability from "./sustainability/page";
 interface HoverButtonProps {
   initialText: string;
   hoverText: string;
@@ -24,7 +24,15 @@ const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
         <Navbar />
       </div>
       {/* <div className="flex-grow "> */}
-      <div className="text-green-100 w-full flex flex-col  gap-7 h-screen p-6  ">
+      <div
+        className="text-green-100 w-full flex flex-col  gap-7 h-screen p-6"
+        // style={{
+        //   backgroundImage: "url('/uses/Chilli.jpeg')",
+        //   backgroundSize: "100% 100%", // Adjust the width and height as needed
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        // }}
+      >
         <h1 className=" text-6xl md:text-8xl font-semibold  ">
           <span>22</span> Chilli Flakes
         </h1>
@@ -51,17 +59,37 @@ const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
           </Link>
         </div>
       </div>
-      <div className="h-100vh bg-black-100 w-full h-screen text-green-100">
+      <div
+        className="h-screen w-full text-green-100"
+        // style={{
+        //   backgroundImage: "url('/uses/PlayfulCook.jpeg')",
+        //   backgroundSize: "100% 100%", // Adjust the width and height as needed
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        //   opacity: 0.6,
+        // }}
+      >
         {/* //Ingredients */}
         <Ingredients />
       </div>
-      {/* Uses/Ingredients */}
-      <div className=" h-screen style={{ backgroundImage: url('https://pin.it/22z3y5OoS')}}">
+
+      <div
+        className=" h-screen"
+        // style={{
+        //   backgroundImage: "url('/uses/Another.jpeg')",
+        //   backgroundSize: "100% 100%", // Adjust the width and height as needed
+
+        //  }}
+      >
         <Uses />
       </div>
-      <div>
+      <div
+        className="h-screen bg-cover bg-center bg-white-200"
+        // style={{ backgroundImage: "url('/uses/PlayfulCook.jpeg')" }}
+      >
         <Shop />
       </div>
+      <div>{/* <Sustainability/> */}</div>
       {/* </div> */}
     </main>
   );
