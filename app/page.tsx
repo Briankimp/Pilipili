@@ -18,6 +18,7 @@ const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
   const [text, setText] = useState(initialText);
   const [hovered, setHovered] = useState(false);
   return (
+
     <main className="md:px-16">
       <div className="sticky top-0">
         {/* <div> */}

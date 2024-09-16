@@ -45,6 +45,7 @@ const Navbar = () => {
                 {Navlink.name}
               </Link>
             ))}
+
         </div>
         </div>
 
