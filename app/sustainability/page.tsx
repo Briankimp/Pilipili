@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 
 function Sustainabilty() {
   return (
-      <div className=" h-screen bg-white-100 items-center text-black-100 flex flex-col ">
+      <div className=" h-screen bg-white-200 items-center text-black-100 flex flex-col ">
           <div className="bg-bg">
               
           </div>
