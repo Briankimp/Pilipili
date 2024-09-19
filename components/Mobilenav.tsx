@@ -7,22 +7,26 @@ import Button from "./Button";
 const Navlinks = [
   {
     name: "Home",
-    path: "/home",
+    path: "../app/home",
   },
   {
     name: "Ingredients",
-    path: "/Ingredients",
+    path: "../app/ingredients",
   },
   {
     name: "Uses",
-    path: "/Uses",
+    path: "../app/Uses",
   },
-
+  {
+    name: "Shop",
+    path: "../app/Shop",
+  },
   {
     name: "Contact",
-    path: "/contacts",
+    path: "../app/contact",
   },
 ];
+
 const Mobilenav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
