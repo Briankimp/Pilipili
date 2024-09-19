@@ -2,6 +2,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+// import Ingredients from "./ingredients/page";
 import Ingredients from "./ingredients/page";
 import Uses from "./Uses/page";
 import Button from "../components/Button";
