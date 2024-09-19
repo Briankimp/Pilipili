@@ -7,23 +7,23 @@ import Button from "./Button";
 const Navlinks = [
   {
     name: "Home",
-    path: "../app/home",
+    path: "/home",
   },
   {
     name: "Ingredients",
-    path: "../app/ingredients",
+    path: "/ingredients",
   },
   {
     name: "Uses",
-    path: "../app/Uses",
+    path: "/Uses",
   },
   {
     name: "Shop",
-    path: "../app/Shop",
+    path: "/Shop",
   },
   {
     name: "Contact",
-    path: "../app/contact",
+    path: "/contact",
   },
 ];
 
