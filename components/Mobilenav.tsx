@@ -35,7 +35,7 @@ const Mobilenav: React.FC = () => {
   };
   return (
 
-    <div className="md:hidden  text-text-black font-semibold p-2 mt-1 shadow-md bg-white-200 rounded-full mx-2">
+    <div className="md:hidden text-text-black font-semibold p-2 mt-1 shadow-md bg-white-200 rounded-full mx-2">
 
       <div className="flex justify-between items-center">
         <div>
