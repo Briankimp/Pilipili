@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 // import Ingredients from "./ingredients/page";
-import Ingredients from "./ingredients/page";
+import Ingredients from "./Ingredients/page";
 import Uses from "./Uses/page";
 import Button from "../components/Button";
 import { useState } from "react";
@@ -51,7 +51,7 @@ const Home: React.FC<HoverButtonProps> = ({ initialText, hoverText }) => {
           </Link>
         </div>
       </div>
-      <div  className="h-screen w-full text-green-100" >
+      <div className="h-screen w-full text-green-100">
         <Ingredients />
       </div>
       <div className=" h-screen">
