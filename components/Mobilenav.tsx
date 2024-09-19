@@ -7,23 +7,23 @@ import Button from "./Button";
 const Navlinks = [
   {
     name: "Home",
-    path: "../app/home",
+    path: "/home",
   },
   {
     name: "Ingredients",
-    path: "../app/ingredients",
+    path: "/ingredients",
   },
   {
     name: "Uses",
-    path: "../app/Uses",
+    path: "/Uses",
   },
   {
     name: "Shop",
-    path: "../app/Shop",
+    path: "/Shop",
   },
   {
     name: "Contact",
-    path: "../app/contact",
+    path: "/contact",
   },
 ];
 
@@ -35,7 +35,7 @@ const Mobilenav: React.FC = () => {
   };
   return (
 
-    <div className="md:hidden  text-text-black font-semibold p-2 mt-1 shadow-md bg-white-200 rounded-full mx-2">
+    <div className="md:hidden text-text-black font-semibold p-2 mt-1 shadow-md bg-white-200 rounded-full mx-2">
 
       <div className="flex justify-between items-center">
         <div>
