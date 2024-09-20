@@ -2,11 +2,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
-import Ingredients from "./Ingredients/page";
 import Uses from "./Uses/page";
 import Button from "../components/Button";
 import Shop from "./Shop/page";
 import Contact from "./contact/page";
+import Ingredients from "./Ingredients/page";
 
 const Home: React.FC = () => {
   return (
