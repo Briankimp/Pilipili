@@ -1,5 +1,4 @@
 import React from "react";
-import { CardSpotlightDemo } from "@/components/Card";
 import { details } from "framer-motion/client";
 import Button from "@/components/Button";
 import Link from "next/link";
