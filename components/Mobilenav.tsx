@@ -11,7 +11,7 @@ const Navlinks = [
   },
   {
     name: "Ingredients",
-    path: "/ingredients",
+    path: "/Ingredients",
   },
   {
     name: "Uses",
