@@ -7,7 +7,7 @@ import Mobilenav from "./Mobilenav";
 const Navlinks = [
   {
     name: "Home",
-    path: "/home",
+    path: "/",
   },
   {
     name: "Ingredients",

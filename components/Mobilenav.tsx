@@ -7,7 +7,7 @@ import Button from "./Button";
 const Navlinks = [
   {
     name: "Home",
-    path: "/home",
+    path: "/",
   },
   {
     name: "Ingredients",
