@@ -53,7 +53,7 @@ const recipes: Recipe[] = [
 
 const CarouselComponent = () => {
   return (
-    <div className=" w-full bg-white-100 ">
+    <div className=" w-full bg-white-100 z-10 ">
       <Carousel
         autoplay
         className=" w-full bg-white-100 "

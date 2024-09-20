@@ -7,23 +7,23 @@ import Mobilenav from "./Mobilenav";
 const Navlinks = [
   {
     name: "Home",
-    path: "../app/home",
+    path: "/",
   },
   {
     name: "Ingredients",
-    path: "../app/ingredients",
+    path: "/ingredients",
   },
   {
     name: "Uses",
-    path: "../app/Uses",
+    path: "/Uses",
   },
   {
     name: "Shop",
-    path: "../app/Shop",
+    path: "/Shop",
   },
   {
     name: "Contact",
-    path: "../app/contact",
+    path: "/contact",
   },
 ];
 
@@ -34,7 +34,7 @@ const Navbar = () => {
   };
   return (
     <div className="sticky  ">
-      <div className=" hidden md:flex justify-between text-lg rounded-full mt-3 bg-white-200 shadow-sm text-text-black font-semibold p-3 align-middle">
+      <div className=" hidden md:flex justify-between mx-1 text-lg rounded-full mt-3 bg-white-200 shadow-sm text-text-black font-semibold p-3 align-middle">
 
           <div>
             <h1 className="text-5xl font-bold text-black-100">22</h1>

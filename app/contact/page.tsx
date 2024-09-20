@@ -228,9 +228,10 @@ const Contact = () => {
   return (
     <div className="bg-white-100 h-screen pt-10 flex flex-col w-full ">
       <div className=" w-full ">
-        <h1 className=" text-black-100 font-semibold text-4xl text-center">
-          Let's Chat
+        <h1 className="text-black-100 font-semibold text-4xl text-center">
+          Let&apos;s Chat
         </h1>
+
         <div className=" flex-col md:grid md:grid-cols-2">
           <div className="text-black-100 pt-8">
             <div className="flex px-5 justify-center items-center h-screen shadow-sm bg-white-100">
