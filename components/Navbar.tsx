@@ -44,6 +44,7 @@ const Navbar = () => {
               key={index}
               href={Navlink.path}
               className="  text-green-100 hover:text-btn-yellow p-3"
+              
             >
               {Navlink.name}
             </Link>
