@@ -10,12 +10,12 @@ const Button: React.FC<ButtonProps> = ({
   className = "",
   ...props
 }) => {
-  const baseStyles = "text-black-100 h m-3"; // Fixed any potential CSS classes
+  const baseStyles = "text-black-100 h m-2"; // Fixed any potential CSS classes
   const variantStyles = {
     Primary:
       "hover:text-white bg-btn-orange hover:scale-95 hover:bg-btn-yellow hover:text-white-200 transition-transform duration-1000 p-3 rounded-full",
     secondary:
-      "hover:text-white-200 bg-btn-red hover:scale-95 hover:bg-btn-yellow p-3 rounded-full",
+      "hover:text-white-200 bg-btn-red hover:scale-95 hover:bg-btn-yellow p-2 rounded-full",
   };
 
   return (

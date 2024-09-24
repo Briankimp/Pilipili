@@ -66,7 +66,7 @@ const Shop = () => {
         {Pricing.map((Pricing, index) => (
           <div
             key={index}
-            className="bg-btn-orange mx-4 gap-3 shadow-lg p-5 m-2 rounded-xl w-auto text-center flex flex-col  "
+            className="bg-btn-orange mx-auto gap-3 shadow-lg p-5 m-2 rounded-xl w-2/3 text-center flex flex-col  "
           >
             <h1 className="font-semibold text-3xl ">{Pricing.Contry}</h1>
             <h1 className="font-semibold text-md ">{Pricing.Price}</h1>
