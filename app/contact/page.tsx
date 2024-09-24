@@ -226,24 +226,27 @@ const Socials = [
 
 const Contact = () => {
   return (
-    <div className="bg-white-100 h-screen pt-10 flex flex-col w-full ">
+    <div className="bg-white-100 h-screen md:pt-10 flex flex-col w-full ">
       <div className=" w-full ">
-        <h1 className="text-black-100 font-semibold text-4xl text-center">
+        <h1 className="text-black-100 mt-5 font-semibold text-4xl text-center">
           Let&apos;s Chat
         </h1>
 
         <div className=" flex-col md:grid md:grid-cols-2">
-          <div className="text-black-100 pt-8">
-            <div className="flex px-5 justify-center items-center h-screen shadow-sm bg-white-100">
-              <div className=" ">
+          <div className="text-black-100 md:pt-8 mt-0">
+            <div className="mt-7 md:hidden">
+              <ContactForm />
+            </div>
+            <div className="flex justify-center items-center mt-6 shadow-sm bg-white-100">
+              <div className="">
                 <h1 className="font-semibold text-xl">Follow us on :</h1>
-                <ul className="flex flex-row ">
-                  <li className="  ">
+                <ul className="flex">
+                  <li className="">
                     {Socials.map((Social, index) => (
                       <Link
                         key={index}
                         href={Social.path}
-                        className="py-5 text-green-100 hover:text-black-100"
+                        className="py-5 text-green-100 hover:text-btn-yellow"
                       >
                         <h1 className="flex text-xl py-2 ">
                           <span className="">{Social.icon}</span>
@@ -264,7 +267,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <ContactForm />
         </div>
       </div>
     </div>

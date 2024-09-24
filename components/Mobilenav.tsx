@@ -54,7 +54,7 @@ const Mobilenav: React.FC = () => {
           >
             <Button
               onClick={toggleMenu}
-              className=" text-btn-orange hover:text-btn-red  bg-btn-yellow !top-4 !right-4 z-50 p-2 text-white bg-red rounded-full focus:outline-none"
+              className=" text-btn-orange hover:text-btn-red  bg-btn-yellow !top-4 !right-4 z-80 p-2 px-3 text-white bg-red rounded-full focus:outline-none"
             >
               {isOpen ? <X size={34} /> : <Menu size={34} />}
             </Button>
