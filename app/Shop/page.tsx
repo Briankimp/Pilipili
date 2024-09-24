@@ -62,11 +62,11 @@ const Shop = () => {
           Get Your Spice Fix
         </h1>
       </div>
-      <div className=" grid grid-cols-2 px-4 gap-2 w-full justify-center items-center ">
+      <div className=" grid grid-cols-2 px-4 gap-2 w-full justify-center  items-center ">
         {Pricing.map((Pricing, index) => (
           <div
             key={index}
-            className="bg-btn-orange mx-auto gap-3 shadow-lg p-5 m-2 rounded-xl w-2/3 text-center flex flex-col  "
+            className="bg-btn-orange mx-auto gap-3 shadow-lg p-3 m-2 rounded-xl  text-center flex flex-col w-2/5 py-3"
           >
             <h1 className="font-semibold text-3xl ">{Pricing.Contry}</h1>
             <h1 className="font-semibold text-md ">{Pricing.Price}</h1>
@@ -87,7 +87,7 @@ const Shop = () => {
           </div>
         ))}
       </div>
-      <div className=" w-full bg-white-200">
+      <div className=" w-full bg-white-200 mt-2 ">
         <Sustainabilty />
       </div>
     </div>
