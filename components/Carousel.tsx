@@ -56,7 +56,7 @@ const CarouselComponent = () => {
     <div className=" w-full bg-white-100 z-10 ">
       <Carousel
         autoplay
-        className=" w-full bg-white-100 "
+        className=" w-full h-full bg-white-100 "
         dots={false}
         arrows={true}
       >

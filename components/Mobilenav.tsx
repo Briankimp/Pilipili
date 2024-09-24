@@ -7,23 +7,23 @@ import Button from "./Button";
 const Navlinks = [
   {
     name: "Home",
-    path: "/",
+    path: "#",
   },
   {
     name: "Ingredients",
-    path: "/Ingredients",
+    path: "#Ingredients",
   },
   {
     name: "Uses",
-    path: "/Uses",
+    path: "#Uses",
   },
   {
     name: "Shop",
-    path: "/Shop",
+    path: "#Shop",
   },
   {
     name: "Contact",
-    path: "/contact",
+    path: "#Contact",
   },
 ];
 
@@ -34,7 +34,7 @@ const Mobilenav: React.FC = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="md:hidden text-text-black font-semibold p-2 mt-1 shadow-md bg-white-200 rounded-full mx-2">
+    <div className="md:hidden text-text-black z-50 font-semibold p-2 mt-1 shadow-md bg-white-200 rounded-full mx-2">
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-5xl font-bold px-2 text-black-100">22</h1>
@@ -42,7 +42,7 @@ const Mobilenav: React.FC = () => {
         <div>
           <Button
             onClick={toggleMenu}
-            className=" text-btn-orange hover:text-btn-red  bg-btn-yellow top-4 right-4 z-50 p-2 text-white bg-red rounded-full focus:outline-none"
+            className=" text-btn-orange hover:text-btn-red  bg-btn-yellow top-4 right-4  p-2 text-white bg-red rounded-full focus:outline-none"
           >
             {isOpen ? <X size={34} /> : <Menu size={34} />}
           </Button>

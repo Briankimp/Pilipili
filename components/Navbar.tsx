@@ -11,19 +11,19 @@ const Navlinks = [
   },
   {
     name: "Ingredients",
-    path: "/ingredients",
+    path: "#Ingredients",
   },
   {
     name: "Uses",
-    path: "/Uses",
+    path: "#Uses",
   },
   {
     name: "Shop",
-    path: "/Shop",
+    path: "#Shop",
   },
   {
     name: "Contact",
-    path: "/contact",
+    path: "#Contact",
   },
 ];
 

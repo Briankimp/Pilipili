@@ -24,7 +24,7 @@ const Home: React.FC = () => {
           whileInView={{ y: -100 }} // Adjust for effect
           transition={{ duration: 1, ease: "easeInOut" }}
         />
-        <div className="relative z-10 flex flex-col gap-9 h-full p-6 text-green-100">
+        <div className="relative flex flex-col gap-9 h-full p-6 text-green-100">
           <h1 className="pt-9 text-6xl md:text-8xl font-semibold items-center">
             <span>22</span> Chilli Flakes
           </h1>
@@ -52,16 +52,16 @@ const Home: React.FC = () => {
       </div>
 
       {/* Other Sections */}
-      <div className="h-screen w-full text-green-100">
+      <div id="Ingredients" className="h-screen w-full text-green-100">
         <Ingredients />
       </div>
-      <div className="h-screen">
+      <div id="Uses" className="h-screen">
         <Uses />
       </div>
-      <div className="h-screen bg-white-200">
+      <div id="Shop" className="h-screen bg-white-200">
         <Shop />
       </div>
-      <div className="px-4">
+      <div id="Contact" className="px-4">
         <Contact />
       </div>
     </main>
